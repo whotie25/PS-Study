@@ -1,11 +1,10 @@
-int gcd(int n1, int n2) {
+int gcd(int a, int b) {
 	/* Euclidean Algorithm */
 	int r;
-	while (n2) {
-		r = n1 % n2;
-		n1 = n2;
-		n2 = r;
+	while (b) {
+		r = a % b;
+		a = b;
+		b = r;
 	}
-	return n1;
-
+	return a;
 }
